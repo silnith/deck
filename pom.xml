@@ -9,7 +9,6 @@
 	<packaging>jar</packaging>
 
 	<name>Deck</name>
-	<url>http://maven.apache.org</url>
 	<description>A deck of cards.</description>
 	<inceptionYear>2014</inceptionYear>
 
