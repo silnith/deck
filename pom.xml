@@ -9,6 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>Deck</name>
+	<url />
 	<description>A deck of cards.</description>
 	<inceptionYear>2014</inceptionYear>
 
@@ -31,29 +32,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-		<repository>
-			<id>rose-release</id>
-			<url>http://192.168.4.1:8080/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>rose-snapshot</id>
-			<uniqueVersion>false</uniqueVersion>
-			<url>http://192.168.4.1:8080/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
-	<repositories>
-		<repository>
-			<id>rose</id>
-			<url>https://192.168.4.1:8080/artifactory/repo/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+
+	<distributionManagement />
+
+	<repositories />
+
 	<build>
 		<plugins>
 			<plugin>
