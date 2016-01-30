@@ -38,7 +38,6 @@ public enum Suit {
     
     /**
      * Returns the Unicode symbol for the card suit.
-     * 
      * <table>
      * <thead>
      * <tr>

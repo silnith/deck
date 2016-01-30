@@ -2,6 +2,7 @@ package org.silnith.deck;
 
 import java.beans.ConstructorProperties;
 
+
 /**
  * A playing card.
  * 
@@ -16,10 +17,8 @@ public class Card {
     /**
      * Constructs a new playing card with the given value and suit.
      * 
-     * @param value
-     *            the value for the card
-     * @param suit
-     *            the suit for the card
+     * @param value the value for the card
+     * @param suit the suit for the card
      */
     @ConstructorProperties({ "value", "suit" })
     public Card(final Value value, final Suit suit) {
