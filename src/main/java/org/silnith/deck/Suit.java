@@ -39,6 +39,7 @@ public enum Suit {
     /**
      * Returns the Unicode symbol for the card suit.
      * <table>
+     * <caption>The Unicode symbols for each card suit.</caption>
      * <thead>
      * <tr>
      * <th>Suit</th>
