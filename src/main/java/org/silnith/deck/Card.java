@@ -23,10 +23,10 @@ public class Card {
     @ConstructorProperties({ "value", "suit" })
     public Card(final Value value, final Suit suit) {
         if (value == null) {
-            throw new NullPointerException("Value cannot be null.");
+            throw new IllegalArgumentException("Value cannot be null.");
         }
         if (suit == null) {
-            throw new NullPointerException("Suit cannot be null.");
+            throw new IllegalArgumentException("Suit cannot be null.");
         }
         this.value = value;
         this.suit = suit;

@@ -24,6 +24,7 @@ public enum Suit {
     private final Color color;
     
     private Suit(final Color color) {
+    	assert color != null;
         this.color = color;
     }
     

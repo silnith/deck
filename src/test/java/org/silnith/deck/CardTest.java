@@ -1,11 +1,11 @@
 package org.silnith.deck;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 
 public class CardTest {
     
@@ -14,19 +14,19 @@ public class CardTest {
         new Card(Value.EIGHT, Suit.HEART);
     }
     
-    @Test(expected = NullPointerException.class)
+    @Test
     public void testCardNullValue() {
-        new Card(null, Suit.HEART);
+    	assertThrows(IllegalArgumentException.class, () -> new Card(null, Suit.HEART));
     }
     
-    @Test(expected = NullPointerException.class)
+    @Test
     public void testCardNullSuit() {
-        new Card(Value.EIGHT, null);
+    	assertThrows(IllegalArgumentException.class, () -> new Card(Value.EIGHT, null));
     }
     
-    @Test(expected = NullPointerException.class)
+    @Test
     public void testCardNullValueAndSuit() {
-        new Card(null, null);
+    	assertThrows(IllegalArgumentException.class, () -> new Card(null, null));
     }
     
     @Test
@@ -107,7 +107,8 @@ public class CardTest {
         assertFalse(card1.hashCode() == card2.hashCode());
     }
     
-    @Test
+    @SuppressWarnings("unlikely-arg-type")
+	@Test
     public void testEqualsDifferentType() {
         final Card card = new Card(Value.EIGHT, Suit.HEART);
         
